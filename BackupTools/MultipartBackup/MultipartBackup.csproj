@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Language>C#</Language>
+    <TargetFramework>net5.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GlacierBackup.cs" />
+    <Compile Include="MultipartBackupApp.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Glacier" Version="3.7.0.125" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackupTools.Common\BackupTools.Common.csproj" />
+    <ProjectReference Include="..\BitEffects.Common\BitEffects.Common.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+TODO:
+	- Improve code comments
+	X Add logging to each tool
+		X Sync
+		X MultipartBackup
+		X Restore
+		X TidyVault
+		! UploadArchive
+	X Don't save snapshot or send backup if there are no changes
+	X Add moving files to snapshots (matching md5)
+	X Default app config path in options
+	X Complete web interface:
+		X Show logs
+		X Show current backups
+		X Save settings/backup scripts
+		X Configure cron
+		! Move App constants into app config
+	- Add Option usage
+	- Add Option validation
+
+
+Tools:
+	- Sync
+		Create and Extract snapshots of folders to and from tar archives
+	- MultipartBackup
+		Split a stream and upload it to glacier
+	- Restore
+		Two stage process to send a retrieval job to glacier,
+		then stream the archive to the restore script
+	- TidyVault
+		Delete unused archive data from glacier
+		Synchronize the inventory
+	- UploadArchive
+		Deprecated?
+
+
+Web Interface:
+	- Views logs
+	- Manages configuration options
+	- Configures cron jobs and generates scripts
+	- Initiates restore operations
+	- Triggers manual backup

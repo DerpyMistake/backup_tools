@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Glacier" Version="3.7.0.125" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BitEffects.Common\BitEffects.Common.csproj" />
+  </ItemGroup>
+
+</Project>

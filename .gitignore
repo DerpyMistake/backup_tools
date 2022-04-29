@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# backup_tools exclusions
+db/
+tools/
+snapshots/
+app_config.*
+Backup(!Tools)*/
+launchSettings.json
+
 # User-specific files
 *.rsuser
 *.suo
@@ -245,7 +253,8 @@ Generated_Code/
 # to a newer Visual Studio version. Backup files are not needed,
 # because we have git ;-)
 _UpgradeReport_Files/
-Backup*/
+# disabled for this repository
+#Backup*/
 UpgradeLog*.XML
 UpgradeLog*.htm
 ServiceFabricBackup/

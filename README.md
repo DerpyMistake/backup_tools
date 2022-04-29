@@ -1,4 +1,5 @@
 # backup_tools
-AWS Glacier backup utilities
+Various Tools for securely backing up data to AWS Glacier
 
-I do not claim to be a professional, but hopefully this can serve as a starting place for anyone interested in working with secure Glacier backups.
+Consider these tools a starting point for your own project. I do not claim to be professional.
+
